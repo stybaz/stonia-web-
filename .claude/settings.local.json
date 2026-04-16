@@ -17,7 +17,9 @@
       "Bash(git commit:*)",
       "Bash(git branch:*)",
       "Bash(git remote:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git config *)",
+      "Bash(git credential *)"
     ]
   },
   "sandbox": {

@@ -139,6 +139,7 @@ export default function Hero() {
           >
             <Link
               href="/#kontakt"
+              className="btn-primary"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -151,7 +152,6 @@ export default function Hero() {
                 fontSize: "1rem",
                 textDecoration: "none",
                 boxShadow: "0 12px 32px rgba(237,98,42,0.38)",
-                transition: "transform 180ms ease, box-shadow 180ms ease",
               }}
               data-track="cta_click"
               data-track-label="hero_poptavka"
@@ -163,20 +163,12 @@ export default function Hero() {
             </Link>
             <Link
               href="/realizace"
+              className="pill-cta pill-cta--ghost-dark"
               style={{
-                display: "inline-flex",
-                alignItems: "center",
                 gap: "8px",
                 padding: "14px 24px",
-                borderRadius: "999px",
-                background: "rgba(255,255,255,0.1)",
-                border: "1px solid rgba(255,255,255,0.22)",
-                color: "rgba(255,255,255,0.92)",
-                fontWeight: 600,
                 fontSize: "1rem",
-                textDecoration: "none",
                 backdropFilter: "blur(8px)",
-                transition: "background 180ms ease",
               }}
               data-track="cta_click"
               data-track-label="hero_realizace"
@@ -191,20 +183,12 @@ export default function Hero() {
             </Link>
             <a
               href="tel:+420721024135"
+              className="pill-cta pill-cta--ghost-dark"
               style={{
-                display: "inline-flex",
-                alignItems: "center",
                 gap: "8px",
                 padding: "14px 24px",
-                borderRadius: "999px",
-                background: "rgba(255,255,255,0.1)",
-                border: "1px solid rgba(255,255,255,0.22)",
-                color: "rgba(255,255,255,0.92)",
-                fontWeight: 600,
                 fontSize: "1rem",
-                textDecoration: "none",
                 backdropFilter: "blur(8px)",
-                transition: "background 180ms ease",
               }}
               data-track="phone_click"
               data-track-label="hero_phone"

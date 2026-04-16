@@ -1,6 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 export default function FloatingCTA() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const hero = document.getElementById("hero");
+    if (!hero) {
+      setVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setVisible(!entry.isIntersecting),
+      { threshold: 0 }
+    );
+
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div
       className="floating-cta"
@@ -12,6 +32,10 @@ export default function FloatingCTA() {
         flexDirection: "column",
         alignItems: "flex-end",
         gap: "10px",
+        opacity: visible ? 1 : 0,
+        pointerEvents: visible ? "auto" : "none",
+        transform: visible ? "translateY(0)" : "translateY(12px)",
+        transition: "opacity 250ms ease, transform 250ms ease",
       }}
     >
       {/* Phone */}
