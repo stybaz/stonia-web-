@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/#pro-obce", label: "Pro obce" },
   { href: "/#exterier", label: "Exteriér" },
   { href: "/#interier", label: "Interiér" },
+  { href: "/realizace", label: "Realizace" },
   { href: "/#kontakt", label: "Kontakt" },
 ];
 

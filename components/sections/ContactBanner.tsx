@@ -499,10 +499,10 @@ export default function ContactBanner() {
             </span>
           </div>
           <p style={{ margin: "0 0 3px", fontSize: "1.3rem", fontWeight: 700, color: "#fff", letterSpacing: "-0.025em", lineHeight: 1.15 }}>
-            Dolní Sukolom
+            Uničov
           </p>
           <p style={{ margin: "0 0 22px", fontSize: "0.88rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.5 }}>
-            Uničov · Olomoucký kraj
+            Olomoucký kraj
           </p>
           <a
             href="https://mapy.cz/zakladni?x=17.119&y=49.779&z=15&source=coor&id=17.119%2C49.779"
