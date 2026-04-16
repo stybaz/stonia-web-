@@ -19,7 +19,9 @@
       "Bash(git remote:*)",
       "Bash(git push:*)",
       "Bash(git config *)",
-      "Bash(git credential *)"
+      "Bash(git credential *)",
+      "Bash(npm i *)",
+      "Bash(sudo chown *)"
     ]
   },
   "sandbox": {
