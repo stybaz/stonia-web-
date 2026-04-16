@@ -21,7 +21,8 @@
       "Bash(git config *)",
       "Bash(git credential *)",
       "Bash(npm i *)",
-      "Bash(sudo chown *)"
+      "Bash(sudo chown *)",
+      "Bash(npm install *)"
     ]
   },
   "sandbox": {

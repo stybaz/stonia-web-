@@ -75,8 +75,11 @@ const regions = [
   { label: "Opava a okolí", highlight: false },
   { label: "Ostrava a okolí", highlight: false },
   { label: "Hranice a okolí", highlight: false },
+  { label: "Zlín a okolí", highlight: false },
+  { label: "Kroměříž a okolí", highlight: false },
   { label: "Olomoucký kraj", highlight: true },
   { label: "Moravskoslezský kraj", highlight: true },
+  { label: "Zlínský kraj", highlight: true },
 ];
 
 export default function AboutPreview() {
