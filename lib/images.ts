@@ -65,8 +65,8 @@ export const images = {
 
   /** Sekce Pomníky / hřbitovní architektura (800×600 px) */
   hrbitov: {
-    card:    "https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80",
-    detail1: "https://images.unsplash.com/photo-1562774053-701939374585?w=900&q=80",
+    card:    "/images/hrbitov/hrbitov-hlavni.png",
+    detail1: "/images/hrbitov/hrbitov-hlavni.png",
     detail2: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80",
     detail3: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&q=80",
     detail4: "https://images.unsplash.com/photo-1549887552-cb1071d3e5ca?w=700&q=80",
@@ -97,8 +97,7 @@ export const images = {
   // kontakt: "/images/ostatni/kontakt.jpg",
 
   /** Sekce Jak pracujeme — foto (800×600 px) */
-  jakPracujeme: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-  // jakPracujeme: "/images/ostatni/jak-pracujeme.jpg",
+  jakPracujeme: "/images/ostatni/jak-pracujeme.png",
 
   /** O nás — fotky výrobny a CNC strojů (1200×800 px) */
   arealMedlov: "/images/o-nas/areal-medlov.png",
