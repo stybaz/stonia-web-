@@ -126,12 +126,36 @@ export async function POST(request: NextRequest) {
       to: email,
       subject: "Potvrzení poptávky – STONIA kamenictví",
       html: `
-        <h2>Děkujeme za vaši poptávku!</h2>
-        <p>Dobrý den, <strong>${safeName}</strong>,</p>
-        <p>obdrželi jsme vaši poptávku a ozveme se vám do 24 hodin.</p>
-        <p>V případě urgentní záležitosti nás neváhejte kontaktovat telefonicky na <strong>+420 721 024 135</strong>.</p>
-        <br>
-        <p>S pozdravem,<br><strong>Tým STONIA kamenictví</strong><br>Uničov, Olomoucký kraj<br>+420 721 024 135</p>
+        <div style="font-family:Arial,sans-serif;font-size:15px;color:#1a1a1a;max-width:560px;">
+          <h2 style="margin:0 0 16px;font-size:20px;color:#1a1a1a;">Děkujeme za vaši poptávku!</h2>
+          <p style="margin:0 0 12px;">Dobrý den, <strong>${safeName}</strong>,</p>
+          <p style="margin:0 0 12px;">obdrželi jsme vaši poptávku a ozveme se vám do 24 hodin.</p>
+          <p style="margin:0 0 32px;">V případě urgentní záležitosti nás neváhejte kontaktovat telefonicky na <strong>+420 721 024 135</strong>.</p>
+
+          <p style="margin:0 0 20px;color:#555;">S pozdravem</p>
+
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+            <tr>
+              <td style="padding-right:20px;vertical-align:middle;">
+                <div style="font-family:Arial,sans-serif;">
+                  <div style="display:inline-flex;align-items:center;gap:4px;">
+                    <span style="font-size:20px;font-weight:900;letter-spacing:-0.04em;color:#171513;">STONIA</span>
+                    <span style="display:inline-block;width:8px;height:8px;background:#ed622a;margin-left:2px;vertical-align:middle;position:relative;top:-6px;"></span>
+                  </div>
+                  <div style="font-size:11px;color:#555;letter-spacing:0.08em;text-transform:uppercase;margin-top:2px;">Kamenictví Štybner</div>
+                </div>
+              </td>
+              <td style="width:1px;background:#ddd;padding:0 20px 0 0;">&nbsp;</td>
+              <td style="padding-left:20px;vertical-align:middle;font-size:13px;line-height:1.8;color:#333;">
+                <strong style="font-size:14px;color:#171513;">Jakub Štybner</strong><br>
+                IČO: 17100551<br>
+                Tel: <a href="tel:+420721024135" style="color:#ed622a;text-decoration:none;">+420 721 024 135</a><br>
+                Email: <a href="mailto:info@stonia.cz" style="color:#ed622a;text-decoration:none;">info@stonia.cz</a><br>
+                Web: <a href="https://www.stonia.cz" style="color:#ed622a;text-decoration:none;">www.stonia.cz</a>
+              </td>
+            </tr>
+          </table>
+        </div>
       `,
     });
 

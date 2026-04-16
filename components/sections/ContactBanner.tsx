@@ -117,9 +117,13 @@ export default function ContactBanner() {
       honeypot: (form.elements.namedItem("honeypot") as HTMLInputElement).value,
     };
 
+    const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+    const phoneRegex = /^(\+420|420)?[\s\-]?[1-9][0-9]{2}[\s\-]?[0-9]{3}[\s\-]?[0-9]{3}$/;
+
     const errors: Record<string, string> = {};
     if (!data.name || data.name.length < 2) errors.name = "Zadejte jméno (min. 2 znaky)";
-    if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) errors.email = "Zadejte platný e-mail";
+    if (!data.email || !emailRegex.test(data.email)) errors.email = "Zadejte platný e-mail (např. jan@email.cz)";
+    if (data.phone && !phoneRegex.test(data.phone.replace(/\s/g, ""))) errors.phone = "Zadejte platné telefonní číslo (např. +420 721 024 135)";
     if (!data.orderType) errors.orderType = "Vyberte typ zakázky";
     if (!data.message || data.message.length < 10) errors.message = "Zpráva musí mít alespoň 10 znaků";
 
@@ -336,7 +340,14 @@ export default function ContactBanner() {
                 </label>
                 <label style={{ display: "grid", gap: "6px" }}>
                   <span style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--text)" }}>Telefon</span>
-                  <input type="tel" name="phone" placeholder="+420 xxx xxx xxx" />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+420 xxx xxx xxx"
+                    aria-invalid={!!fieldErrors.phone}
+                    aria-describedby={fieldErrors.phone ? "err-phone" : undefined}
+                  />
+                  {fieldErrors.phone && <span id="err-phone" role="alert" style={{ fontSize: "0.78rem", color: "#dc2626" }}>{fieldErrors.phone}</span>}
                 </label>
               </div>
               <label style={{ display: "grid", gap: "6px" }}>
