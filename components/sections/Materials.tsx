@@ -1,0 +1,120 @@
+import Image from "next/image";
+import Link from "next/link";
+import { images } from "@/lib/images";
+
+const materials = [
+  {
+    name: "Žula",
+    image: images.materialy.granit,
+    imageAlt: "Žulová pracovní deska – detailní textura přírodní žuly",
+    href: "/#sluzby",
+  },
+  {
+    name: "Mramor",
+    image: images.materialy.mramor,
+    imageAlt: "Bílý mramor Carrara – přirozené žilkování",
+    href: "/#sluzby",
+  },
+  {
+    name: "Kompozit",
+    image: images.materialy.piskovec,
+    imageAlt: "Kompozitní deska Silestone",
+    href: "/#sluzby",
+  },
+  {
+    name: "Travertin",
+    image: images.materialy.travertin,
+    imageAlt: "Travertinová dlažba – přírodní textury",
+    href: "/#sluzby",
+  },
+  {
+    name: "Kvartzit",
+    image: images.materialy.kvartzit,
+    imageAlt: "Kvartzit – přírodní vrstvený kámen s teplými zlatohnědými tóny",
+    href: "/#sluzby",
+  },
+];
+
+export default function Materials() {
+  return (
+    <section
+      className="section-padding section-divider-top"
+      id="materialy"
+      style={{ width: "min(100% - 48px, 1100px)", margin: "0 auto" }}
+    >
+      {/* Heading */}
+      <div className="reveal" style={{ maxWidth: "940px" }}>
+        <p className="eyebrow">Materiály</p>
+        <h2
+          className="section-title"
+          style={{
+            maxWidth: "920px",
+          }}
+        >
+          Přírodní kámen i technické materiály — poradíme, co pro vás bude nejlepší.
+        </h2>
+        <p className="section-lead">
+          Materiál vybíráme podle stylu místa, způsobu použití a nároků na údržbu.
+          Žula, mramor, travertin, kvartzit nebo kompozit — rádi doporučíme, co bude
+          dávat smysl esteticky i na léta dopředu.
+        </p>
+      </div>
+
+      {/* 5-col grid */}
+      <div
+        className="grid-5"
+        style={{
+          gap: "16px",
+          marginTop: "40px",
+        }}
+      >
+        {materials.map((m, i) => (
+          <Link
+            key={m.name}
+            href={m.href}
+            className={`reveal${i > 0 ? ` reveal--delay-${Math.min(i, 2)}` : ""}`}
+            style={{
+              overflow: "hidden",
+              aspectRatio: "0.95",
+              borderRadius: "24px",
+              background: "var(--line)",
+              boxShadow: "var(--shadow-md)",
+              position: "relative",
+              display: "block",
+            }}
+          >
+            <Image
+              src={m.image}
+              alt={m.imageAlt}
+              fill
+              loading="lazy"
+              className="object-cover transition-transform duration-500 hover:scale-[1.06]"
+              sizes="(max-width:640px) 50vw, 20vw"
+            />
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                background: "linear-gradient(180deg, transparent 50%, rgba(17,16,15,0.55) 100%)",
+              }}
+              aria-hidden="true"
+            />
+            <span
+              style={{
+                position: "absolute",
+                bottom: "14px",
+                left: "14px",
+                color: "#fff",
+                fontSize: "0.95rem",
+                fontWeight: 700,
+                letterSpacing: "-0.01em",
+              }}
+            >
+              {m.name}
+            </span>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
