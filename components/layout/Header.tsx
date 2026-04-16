@@ -175,15 +175,6 @@ export default function Header() {
         </span>
 
         <span className="hidden xl:inline-flex items-center gap-3 shrink-0">
-          <Link
-            href="/realizace"
-            className={`nav-link font-medium${pathname === "/realizace" ? " active" : ""}`}
-            style={{ color: pathname === "/realizace" ? "var(--accent)" : "var(--text)", fontSize: "0.9rem" }}
-            aria-current={pathname === "/realizace" ? "page" : undefined}
-          >
-            Realizace
-          </Link>
-          <span style={{ width: "1px", height: "14px", background: "var(--line)" }} aria-hidden="true" />
           <a
             href="tel:+420721024135"
             className="inline-flex items-center gap-2 font-semibold transition-colors duration-150"
