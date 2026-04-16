@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     images: ["https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"],
   },
   icons: {
-    icon: { url: "/favicon.svg?v=4", type: "image/svg+xml" },
+    icon: { url: "/favicon.svg?v=5", type: "image/svg+xml" },
   },
 };
 
@@ -161,8 +161,8 @@ export default function RootLayout({
   return (
     <html lang="cs" className={inter.variable}>
       <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=4" />
-        <link rel="shortcut icon" href="/favicon.svg?v=4" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5" />
+        <link rel="shortcut icon" href="/favicon.svg?v=5" />
       </head>
       <body>
         <a href="#main-content" className="skip-to-content">
