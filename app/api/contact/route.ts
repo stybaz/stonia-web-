@@ -105,8 +105,8 @@ export async function POST(request: NextRequest) {
 
     // Notification email to company
     await resend.emails.send({
-      from: "STONIA web <noreply@stonia.cz>",
-      to: "info@stonia.cz",
+      from: "STONIA web <onboarding@resend.dev>",
+      to: "jakubstybner@gmail.com",
       subject: `Nová poptávka: ${safeOrderType} – ${safeName}`,
       html: `
         <h2>Nová poptávka z webu stonia.cz</h2>
@@ -122,7 +122,7 @@ export async function POST(request: NextRequest) {
 
     // Confirmation email to customer
     await resend.emails.send({
-      from: "STONIA kamenictví <info@stonia.cz>",
+      from: "STONIA kamenictví <onboarding@resend.dev>",
       to: email,
       subject: "Potvrzení poptávky – STONIA kamenictví",
       html: `
