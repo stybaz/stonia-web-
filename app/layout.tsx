@@ -8,6 +8,7 @@ import GoogleAnalyticsLoader from "@/components/seo/GoogleAnalyticsLoader";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import FloatingCTA from "@/components/ui/FloatingCTA";
 import CookieBanner from "@/components/ui/CookieBanner";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -178,6 +179,7 @@ export default function RootLayout({
         <Footer />
         <FloatingCTA />
         <CookieBanner />
+        <Analytics />
       </body>
     </html>
   );
