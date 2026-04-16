@@ -1,0 +1,21 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a1714"/>
+  <rect width="800" height="600" fill="url(#grain)" opacity="0.04"/>
+  <defs>
+    <pattern id="grain" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" fill="#fff"/>
+    </pattern>
+  </defs>
+  <!-- Camera icon -->
+  <g transform="translate(400, 260)" opacity="0.35">
+    <rect x="-44" y="-30" width="88" height="66" rx="8" fill="none" stroke="#ed622a" stroke-width="3"/>
+    <circle cx="0" cy="3" r="18" fill="none" stroke="#ed622a" stroke-width="3"/>
+    <rect x="-10" y="-30" width="20" height="10" rx="3" fill="#ed622a" opacity="0.6"/>
+    <circle cx="28" cy="-18" r="4" fill="#ed622a" opacity="0.5"/>
+  </g>
+  <!-- Text -->
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" opacity="0.55" text-anchor="middle" letter-spacing="0.5">Fotografie</text>
+  <text x="400" y="382" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.3" text-anchor="middle" letter-spacing="1">brzy přidáme</text>
+  <!-- Bottom accent line -->
+  <rect x="364" y="408" width="72" height="2" rx="1" fill="#ed622a" opacity="0.4"/>
+</svg>

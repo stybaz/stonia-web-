@@ -130,7 +130,7 @@ export async function POST(request: NextRequest) {
           <h2 style="margin:0 0 16px;font-size:20px;color:#1a1a1a;">Děkujeme za vaši poptávku!</h2>
           <p style="margin:0 0 12px;">Dobrý den, <strong>${safeName}</strong>,</p>
           <p style="margin:0 0 12px;">obdrželi jsme vaši poptávku a ozveme se vám do 24 hodin.</p>
-          <p style="margin:0 0 32px;">V případě urgentní záležitosti nás neváhejte kontaktovat telefonicky na <strong>+420 721 024 135</strong>.</p>
+          <p style="margin:0 0 32px;">V případě urgentní záležitosti nás neváhejte kontaktovat telefonicky na <strong style="white-space:nowrap;">+420&nbsp;721&nbsp;024&nbsp;135</strong>.</p>
 
           <p style="margin:0 0 20px;color:#555;">S pozdravem</p>
 

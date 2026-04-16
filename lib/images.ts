@@ -31,11 +31,11 @@ export const images = {
   exterier: {
     card:    "/images/exterier/exterier-schody-zahrada.png",
     detail1: "/images/exterier/exterier-schody-zahrada.png",
-    detail2: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80",
-    detail3: "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=700&q=80",
-    detail4: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=700&q=80",
-    detail5: "https://images.unsplash.com/photo-1585128792020-803d29415281?w=700&q=80",
-    detail6: "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?w=700&q=80",
+    detail2: "/images/placeholder.svg",
+    detail3: "/images/placeholder.svg",
+    detail4: "/images/placeholder.svg",
+    detail5: "/images/placeholder.svg",
+    detail6: "/images/placeholder.svg",
     // card:    "/images/exterier/card.jpg",
     // detail1: "/images/exterier/1.jpg",
     // detail2: "/images/exterier/2.jpg",
@@ -67,11 +67,11 @@ export const images = {
   hrbitov: {
     card:    "/images/hrbitov/hrbitov-hlavni.png",
     detail1: "/images/hrbitov/hrbitov-hlavni.png",
-    detail2: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80",
-    detail3: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&q=80",
-    detail4: "https://images.unsplash.com/photo-1549887552-cb1071d3e5ca?w=700&q=80",
-    detail5: "https://images.unsplash.com/photo-1544413660-299165566b1d?w=700&q=80",
-    detail6: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=700&q=80",
+    detail2: "/images/placeholder.svg",
+    detail3: "/images/placeholder.svg",
+    detail4: "/images/placeholder.svg",
+    detail5: "/images/placeholder.svg",
+    detail6: "/images/placeholder.svg",
     // card:    "/images/hrbitov/card.jpg",
     // detail1: "/images/hrbitov/1.jpg",
     // detail2: "/images/hrbitov/2.jpg",
@@ -93,8 +93,7 @@ export const images = {
   },
 
   /** Sekce Kontakt — dekorativní foto (800×1000 px) */
-  kontakt: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
-  // kontakt: "/images/ostatni/kontakt.jpg",
+  kontakt: "/images/placeholder.svg",
 
   /** Sekce Jak pracujeme — foto (800×600 px) */
   jakPracujeme: "/images/ostatni/jak-pracujeme.png",
