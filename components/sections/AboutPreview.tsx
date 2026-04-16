@@ -273,9 +273,8 @@ export default function AboutPreview() {
           background: "var(--surface-strong)",
           border: "1px solid var(--line)",
           display: "flex",
-          alignItems: "center",
-          flexWrap: "wrap",
-          gap: "16px",
+          flexDirection: "column",
+          gap: "12px",
         }}
       >
         {/* Label */}
@@ -287,7 +286,6 @@ export default function AboutPreview() {
             color: "var(--muted)",
             fontSize: "0.85rem",
             fontWeight: 600,
-            flexShrink: 0,
           }}
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -297,22 +295,42 @@ export default function AboutPreview() {
           Kde realizujeme
         </span>
 
-        {/* Divider */}
-        <span style={{ width: "1px", height: "20px", background: "var(--line)", flexShrink: 0 }} aria-hidden="true" />
-
-        {/* Pills */}
+        {/* Cities */}
         <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-          {regions.map((r) => (
+          {regions.filter(r => !r.highlight).map((r) => (
             <span
               key={r.label}
               style={{
                 padding: "5px 12px",
                 borderRadius: "999px",
-                background: r.highlight ? "var(--accent)" : "var(--bg)",
-                border: r.highlight ? "1px solid var(--accent)" : "1px solid var(--line)",
+                background: "var(--bg)",
+                border: "1px solid var(--line)",
                 fontSize: "0.83rem",
-                fontWeight: r.highlight ? 700 : 500,
-                color: r.highlight ? "#fff" : "var(--text)",
+                fontWeight: 500,
+                color: "var(--text)",
+              }}
+            >
+              {r.label}
+            </span>
+          ))}
+        </div>
+
+        {/* Divider */}
+        <span style={{ height: "1px", background: "var(--line)" }} aria-hidden="true" />
+
+        {/* Kraje */}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+          {regions.filter(r => r.highlight).map((r) => (
+            <span
+              key={r.label}
+              style={{
+                padding: "5px 12px",
+                borderRadius: "999px",
+                background: "var(--accent)",
+                border: "1px solid var(--accent)",
+                fontSize: "0.83rem",
+                fontWeight: 700,
+                color: "#fff",
               }}
             >
               {r.label}
