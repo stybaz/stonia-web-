@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import { images } from "@/lib/images";
 
 const highlights = [
   "Pomníky a hrobky",
@@ -22,26 +20,14 @@ export default function Hero() {
         background: "var(--dark)",
       }}
     >
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <Image
-          src={images.heroBg}
-          alt="Kamenická realizace – schody a pracovní deska z přírodního kamene"
-          fill
-          priority
-          className="object-cover object-center"
-          style={{ transform: "scale(1.03)" }}
-          sizes="100vw"
-        />
-      </div>
-
-      {/* Dual gradient overlay */}
+      {/* Gradient background */}
       <div
         className="absolute inset-0"
         style={{
           background: [
-            "linear-gradient(180deg, rgba(17,16,15,0.48) 0%, rgba(17,16,15,0.62) 42%, rgba(17,16,15,0.90) 100%)",
-            "linear-gradient(96deg, rgba(17,16,15,0.86) 0%, rgba(17,16,15,0.52) 52%, rgba(17,16,15,0.16) 88%)",
+            "radial-gradient(ellipse 80% 60% at 75% 15%, rgba(237,98,42,0.18) 0%, transparent 65%)",
+            "radial-gradient(ellipse 50% 50% at 15% 85%, rgba(237,98,42,0.10) 0%, transparent 55%)",
+            "linear-gradient(150deg, #1e1b18 0%, #141210 50%, #0d0c0b 100%)",
           ].join(", "),
         }}
         aria-hidden="true"
