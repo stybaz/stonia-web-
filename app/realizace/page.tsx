@@ -105,6 +105,55 @@ export default function RealizacePage() {
           showFilter={true}
           categories={categories}
         />
+
+        {/* CTA pod galerií */}
+        <div
+          style={{
+            marginTop: "64px",
+            padding: "40px 48px",
+            borderRadius: "var(--radius-lg)",
+            background: "var(--dark)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: "24px",
+          }}
+        >
+          <div>
+            <p style={{ margin: "0 0 6px", fontSize: "1.25rem", fontWeight: 700, color: "#fff", letterSpacing: "-0.02em" }}>
+              Chcete něco podobného?
+            </p>
+            <p style={{ margin: 0, color: "rgba(255,255,255,0.55)", fontSize: "0.97rem" }}>
+              Zaměříme zdarma, připravíme návrh a nacenění bez závazků.
+            </p>
+          </div>
+          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+            <Link
+              href="/#poptavka"
+              className="pill-cta pill-cta--accent"
+              data-track="cta_click"
+              data-track-label="realizace_cta"
+            >
+              Nezávazná poptávka
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </Link>
+            <a
+              href="tel:+420721024135"
+              className="pill-cta"
+              style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)", color: "#fff" }}
+              data-track="phone_click"
+              data-track-label="realizace_phone"
+            >
+              <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.97 9.81 19.79 19.79 0 01.9 1.18 2 2 0 012.88 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              +420 721 024 135
+            </a>
+          </div>
+        </div>
       </section>
 
       <ContactBanner />

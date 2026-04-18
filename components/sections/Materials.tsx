@@ -5,24 +5,28 @@ import { images } from "@/lib/images";
 const materials = [
   {
     name: "Žula",
+    desc: "Odolná vůči mrazu, ideální pro exteriér i pomníky",
     image: images.materialy.granit,
     imageAlt: "Žulová pracovní deska – detailní textura přírodní žuly",
     href: "/#sluzby",
   },
   {
     name: "Mramor",
+    desc: "Elegantní povrch, vhodný zejména pro interiér",
     image: images.materialy.mramor,
     imageAlt: "Bílý mramor Carrara – přirozené žilkování",
     href: "/#sluzby",
   },
   {
     name: "Kompozit",
+    desc: "Technická odolnost, nízká údržba, stálý vzhled",
     image: images.materialy.piskovec,
     imageAlt: "Kompozitní deska Silestone",
     href: "/#sluzby",
   },
   {
     name: "Travertin",
+    desc: "Teplá textura, oblíbený pro obklady a dlažby",
     image: images.materialy.travertin,
     imageAlt: "Travertinová dlažba – přírodní textury",
     href: "/#sluzby",
@@ -93,19 +97,38 @@ export default function Materials() {
               }}
               aria-hidden="true"
             />
-            <span
+            <div
               style={{
                 position: "absolute",
                 bottom: "14px",
                 left: "14px",
-                color: "#fff",
-                fontSize: "0.95rem",
-                fontWeight: 700,
-                letterSpacing: "-0.01em",
+                right: "14px",
               }}
             >
-              {m.name}
-            </span>
+              <span
+                style={{
+                  display: "block",
+                  color: "#fff",
+                  fontSize: "0.95rem",
+                  fontWeight: 700,
+                  letterSpacing: "-0.01em",
+                  marginBottom: "2px",
+                }}
+              >
+                {m.name}
+              </span>
+              <span
+                style={{
+                  display: "block",
+                  color: "rgba(255,255,255,0.72)",
+                  fontSize: "0.72rem",
+                  fontWeight: 500,
+                  lineHeight: 1.4,
+                }}
+              >
+                {m.desc}
+              </span>
+            </div>
           </Link>
         ))}
       </div>
