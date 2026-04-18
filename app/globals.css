@@ -342,6 +342,10 @@ select {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
 }
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .grid-5 {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -390,6 +394,7 @@ select {
     grid-template-columns: 1fr !important;
   }
 
+  .grid-4,
   .grid-5 {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
@@ -670,7 +675,8 @@ select {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
-  /* grid-5 materials → 3 cols on tablet */
+  /* grid-4/grid-5 materials → 2 cols on tablet */
+  .grid-4,
   .grid-5 {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   }

@@ -31,8 +31,8 @@ export const images = {
   exterier: {
     card:    "/images/exterier/exterier-schody-zahrada.png",
     detail1: "/images/exterier/exterier-schody-zahrada.png",
-    detail2: "/images/placeholder.svg",
-    detail3: "/images/placeholder.svg",
+    detail2: "/images/exterier/Schody.png",
+    detail3: "/images/exterier/chodník.png",
     detail4: "/images/placeholder.svg",
     detail5: "/images/placeholder.svg",
     detail6: "/images/placeholder.svg",

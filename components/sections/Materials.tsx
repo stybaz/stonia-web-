@@ -58,9 +58,9 @@ export default function Materials() {
         </p>
       </div>
 
-      {/* 5-col grid */}
+      {/* 4-col grid */}
       <div
-        className="grid-5"
+        className="grid-4"
         style={{
           gap: "16px",
           marginTop: "40px",
@@ -93,7 +93,7 @@ export default function Materials() {
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "linear-gradient(180deg, transparent 50%, rgba(17,16,15,0.55) 100%)",
+                background: "linear-gradient(180deg, transparent 35%, rgba(17,16,15,0.55) 65%, rgba(17,16,15,0.85) 100%)",
               }}
               aria-hidden="true"
             />
