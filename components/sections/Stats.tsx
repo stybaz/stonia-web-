@@ -30,8 +30,9 @@ export default function Stats() {
             <h2
               className="section-title section-title--on-dark"
               style={{
-                fontSize: "clamp(1.5rem, 2.4vw, 2.4rem)",
-                maxWidth: "680px",
+                fontSize: "clamp(1.2rem, 1.9vw, 2rem)",
+                maxWidth: "900px",
+                whiteSpace: "nowrap",
               }}
             >
               Od prvního kontaktu po montáž držíme <span style={{ color: "var(--accent)" }}>kvalitu i termíny.</span>
