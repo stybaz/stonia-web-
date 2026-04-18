@@ -54,7 +54,7 @@ export default function FloatingCTA() {
 
       {/* Poptávka */}
       <a
-        href="/#kontakt"
+        href="/#poptavka"
         aria-label="Nezávazná poptávka"
         className="pill-cta pill-cta--accent pill-cta--mobile"
         data-track="cta_click"

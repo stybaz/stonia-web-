@@ -124,7 +124,7 @@ export default function Hero() {
             }}
           >
             <Link
-              href="/#kontakt"
+              href="/#poptavka"
               className="btn-primary"
               style={{
                 display: "inline-flex",

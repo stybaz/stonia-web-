@@ -194,7 +194,7 @@ function MobileMenuContent({ onClose, links, activeSection }: Omit<MobileMenuPro
           +420 721 024 135
         </a>
         <Link
-          href="/#kontakt"
+          href="/#poptavka"
           onClick={onClose}
           style={{
             display: "inline-flex",

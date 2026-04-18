@@ -190,7 +190,7 @@ export default function Header() {
         </span>
 
         <Link
-          href="/#kontakt"
+          href="/#poptavka"
           className="pill-cta pill-cta--accent shrink-0"
           data-track="cta_click"
           data-track-label="header_poptavka"

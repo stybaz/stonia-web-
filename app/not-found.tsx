@@ -67,7 +67,7 @@ export default function NotFoundPage() {
             Zpět na hlavní stránku
           </Link>
           <Link
-            href="/#kontakt"
+            href="/#poptavka"
             className="pill-cta pill-cta--ghost"
             style={{ fontSize: "0.95rem" }}
           >

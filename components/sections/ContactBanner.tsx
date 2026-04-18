@@ -271,6 +271,7 @@ export default function ContactBanner() {
 
         {/* Right: form */}
         <div
+          id="poptavka"
           style={{
             padding: "40px",
             borderRadius: "var(--radius-lg)",
