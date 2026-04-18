@@ -27,12 +27,6 @@ const materials = [
     imageAlt: "Travertinová dlažba – přírodní textury",
     href: "/#sluzby",
   },
-  {
-    name: "Kvartzit",
-    image: images.materialy.kvartzit,
-    imageAlt: "Kvartzit – přírodní vrstvený kámen s teplými zlatohnědými tóny",
-    href: "/#sluzby",
-  },
 ];
 
 export default function Materials() {
@@ -55,7 +49,7 @@ export default function Materials() {
         </h2>
         <p className="section-lead">
           Materiál vybíráme podle stylu místa, způsobu použití a nároků na údržbu.
-          Žula, mramor, travertin, kvartzit nebo kompozit — rádi doporučíme, co bude
+          Žula, mramor, travertin nebo kompozit — rádi doporučíme, co bude
           dávat smysl esteticky i na léta dopředu.
         </p>
       </div>

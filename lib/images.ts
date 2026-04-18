@@ -110,7 +110,6 @@ export const images = {
     mramor:    "/images/materialy/mramor.png",
     piskovec:  "/images/materialy/kompozit.png",
     travertin: "/images/materialy/travertin.png",
-    kvartzit:  "/images/materialy/kvartzit.png",
     // granit:    "/images/materialy/granit.jpg",
     // mramor:    "/images/materialy/mramor.jpg",
     // piskovec:  "/images/materialy/piskovec.jpg",

@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || "https://www.stonia.cz"
   ),
   title: {
-    default: "STONIA - Kamenictví Štybner | Kámen ve všech podobách",
+    default: "STONIA - Kamenictví Štybner | Zakázkové kamenictví Uničov",
     template: "%s | STONIA - Kamenictví Štybner",
   },
   description:
-    "STONIA - Kamenictví Štybner, Uničov. Specializujeme se na pomníky a hrobky na míru, kamenictví pro obce a pietní místa. Realizujeme v celém Olomouckém a Moravskoslezském kraji. Tel: +420 721 024 135",
+    "STONIA - Kamenictví Štybner. Pomníky a hrobky na míru, kamenické práce pro obce, schody, kuchyňské desky a obklady. Realizace v Olomouckém, Moravskoslezském a Zlínském kraji.",
   keywords: [
     "pomníky na míru",
     "hrobky zakázková výroba",
@@ -56,27 +56,37 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "https://www.stonia.cz",
     siteName: "STONIA - Kamenictví Štybner",
-    title: "STONIA - Kamenictví Štybner | Kámen ve všech podobách",
+    title: "STONIA - Kamenictví Štybner | Zakázkové kamenictví Uničov",
     description:
-      "Zakázkové kamenictví pro exteriér, interiér i pietní místa. Pomníky, schody, kuchyně, obklady. Uničov, Olomoucký kraj.",
+      "STONIA - Kamenictví Štybner. Pomníky a hrobky na míru, kamenické práce pro obce, schody, kuchyňské desky a obklady. Realizace v Olomouckém, Moravskoslezském a Zlínském kraji.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "STONIA - Kamenictví Štybner | Kámen ve všech podobách",
+        alt: "STONIA - Kamenictví Štybner | Zakázkové kamenictví Uničov",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "STONIA - Kamenictví Štybner | Kámen ve všech podobách",
+    title: "STONIA - Kamenictví Štybner | Zakázkové kamenictví Uničov",
     description:
-      "Zakázkové kamenictví pro exteriér, interiér i pietní místa. Pomníky, schody, kuchyně, obklady. Uničov, Olomoucký kraj.",
+      "STONIA - Kamenictví Štybner. Pomníky a hrobky na míru, kamenické práce pro obce, schody, kuchyňské desky a obklady. Realizace v Olomouckém, Moravskoslezském a Zlínském kraji.",
     images: ["https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"],
   },
   icons: {
-    icon: { url: "/favicon.svg?v=6", type: "image/svg+xml" },
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.svg?v=6", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "manifest", url: "/site.webmanifest" },
+    ],
   },
 };
 
@@ -162,8 +172,12 @@ export default function RootLayout({
   return (
     <html lang="cs" className={inter.variable}>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=6" />
-        <link rel="shortcut icon" href="/favicon.svg?v=6" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body>
         <a href="#main-content" className="skip-to-content">
